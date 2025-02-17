@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race to Riches</title>
+    <link rel="stylesheet" href="./general.css">
+</head>
+
+<body>
+    <button id="BigRed">PRESS</button>
+    <div id="welcomeScreen">
+        <div class="scanline"></div>
+        <div class="welcome-content">
+            <h1 class="welcome-text">WELCOME TO RACE TO RICHES</h1>
+            <p class="welcome-text">SYSTEM INITIALIZED</p>
+            <p class="welcome-text">SELECT DIFFICULTY LEVEL:</p>
+            <select class="difficulty-select">
+                <option value="" disabled selected>select here</option>
+                <option value="easy">EASY - FIRST TIME TRAVELER</option>
+                <option value="medium">MEDIUM - SEASONED TRAVELER</option>
+                <option value="hard">HARD - EINSTEIN ADVENTURER</option>
+            </select>
+        </div>
+    </div>
+    <div id="gameScreen">
+        <div class="wheel-container">
+            <div class="wheel">
+                <div class="wheel-center">
+                    <img src="./assets/hourglass.png" alt="hourglass" class="hourglass">
+                </div>
+            </div>
+            <div class="result-text"></div>
+        </div>
+        <button class="spin-button">SPIN</button>
+        <div class="score-label">Score: 0</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
